@@ -1,4 +1,4 @@
-#### ------------ Episode 1 ----------
+## ------------ Episode 1 ----------
 
 ### What is CDN?
 - Is a globally distributed list of servers that cache our content, so that when user try to access our content, ot is served from nearest server.
