@@ -1,0 +1,20 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "- Is a globally distributed list of servers that cache our content, so that when user try to access our content, ot is served from nearest server.\r - Offers: \r     a) Performance (cache our content so request doesnot come to our server everytime, decreases the load on server)\r     b) Less Latency (content served from nearest server)\r     c) Security ( our server are hidden behind CDN, and CDN also provides more security for our content like protected DDOS attack)\r     d) when your content is out of date it can be easily removed & new copy will be cached.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}

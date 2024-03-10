@@ -13,7 +13,7 @@
 - Framework: Has some rule & constraints that has to be followed, has more in built functionality as compared to library.
 
 ### Why is React called React?
-Because it “react” to when there is any change in data.
+- Because it “react” to when there is any change in data.
 
 ### React
 - is a Library, it can be used in small portion of the application also (like when we used rootElement as a root to render the content, only the rootElement will be affected & manipulated by react, except it whole webpage remains the same)
