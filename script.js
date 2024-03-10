@@ -4,20 +4,26 @@ const ReactDOM = require('react-dom/client')
 const rootElement = document.getElementById('root')
 
 
-const heading = React.createElement("h1", {
-    id: 'heading',
-    className :'heading'
-}, "This is heading")
+// both of them are react elements only (jsx will be converted to react element by babel when js code is compiled)
+const head1 = React.createElement(
+    "h1",
+    {
+        id: "heading",
+        className: "heading",
+    },
+    "This is heading 1"
+);
 
+// jsx
+const head2 = <h1>This is heading 2</h1> 
 
-const child = React.createElement("div", {
-    id: 'child',
-    className :'child'
-}, heading)
-const parent = React.createElement("div", {
-    id: 'parent',
-    className :'parent'
-}, child)
+//() are way to tell that inside () jsx will be presnt
+const head3 = (
+    <>
+        <h1>This is heading 3</h1>
+    </>
+);
+
 
 const root = ReactDOM.createRoot(rootElement)
-root.render(parent)
+root.render([head1, head2, head3])

@@ -65,3 +65,27 @@
 - Error Handling
 -- Tree Shaking (remove the unused code -> the code that is not used will remove thay code & compress the code) <- read about it
 
+### Note
+- import/export statement not supported in Browser scripts (ie. script.js file)
+
+
+
+
+## ---------- Episode 3 ----------
+
+### JSX
+- is a HTML-like or XML-like syntax
+- JSX is independent of react & can be used seperately
+- used in React to create React element easily 
+
+### Babel
+- jsx is transpiled before it reaches to js [Parcel is the compiler it compiles the code & babel is used to convert jsx to react elements]
+- jsx -> react.createElement -> react element or js obj -> html element
+
+### types of components in react
+- class components = uses js class to create component
+- function components = uses js fun to create component ( a fun that return jsx code is functional comp)
+
+
+### component composition 
+- render one comp inside another
