@@ -28,3 +28,40 @@
 - used for rendering the content(inside root u render all ur content)
 - takes the js obj(react elements) convert it into html tag and render in root
 - when u render the any element in rootElement (using .render method), existing stuff within the rootElement get replaced with ur element
+
+
+
+
+
+## ----------- Episode 2 ----------
+### package.json 
+- is a configuration file for npm
+
+### package-lock.json
+- store exact version of installed package, it locks the version of packages
+
+### diffrence between carot & tilde
+- carot : ^version “Compatible with version”, will update you to all future minor/patch versions, without incrementing the major version. ^1.2.3 will use releases from 1.2.3 to <2.0.0.
+- tilde : ~version “Approximately equivalent to version”, will update you to all future patch versions, without incrementing the minor version. ~1.2.3 will use releases from 1.2.3 to <1.3.0.
+
+### transitive dependency
+- when there is indirect relationship, then there is transivtive dependency. eg. P->R is true, R->Q is true, then P->Q is also true (this is transitive dependency P is indirectly related to R)
+
+###  what is npx?
+- used to execite the npm package
+
+### parcel  (read from documentation)
+- is a bundler(builds the code, compress, compiles & optimises the code to be served)
+- build the application
+- host application on local server
+- HMR [ie. Hot Module Reload (automatically reload when there is some change in content)]
+- File Matching Algorithm -> written in C++ (it keeps track to the content & when new changes then compares the changes)
+- Caching (for faster builds)
+- Image optimization
+- Consistent Hashing -> read about it
+- Code spiltting (split the code into parts)
+- Diffrential bundling -> support older browser (ie. used so that our application support  on older browser as well)
+- Diagnostic (so that we can daignose the errors-> syntax highlight pointing to exact location where error occured, hints to solve the error)
+- Error Handling
+-- Tree Shaking (remove the unused code -> the code that is not used will remove thay code & compress the code) <- read about it
+
