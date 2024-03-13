@@ -1,4 +1,4 @@
-## ------------ Episode 1 ----------
+## ------------ Episode 1 (Inception) ----------
 
 ### What is CDN?
 - Is a globally distributed list of servers that cache our content, so that when user try to access our content, ot is served from nearest server.
@@ -33,7 +33,7 @@
 
 
 
-## ----------- Episode 2 ----------
+## ----------- Episode 2 (Igniting Our App) ----------
 ### package.json 
 - is a configuration file for npm
 
@@ -71,7 +71,7 @@
 
 
 
-## ---------- Episode 3 ----------
+## ---------- Episode 3 (Laying the foundation) ----------
 
 ### JSX
 - is a HTML-like or XML-like syntax
@@ -89,3 +89,30 @@
 
 ### component composition 
 - render one comp inside another
+
+
+
+## ---------- Episode 4 (Talk is Cheap show me the code) ----------
+
+### Functional components
+-  made of js functions
+- ways to call a functional comp
+    a) <Component_Name/>
+    b) <Component_Name></Component_Name>
+    c) Component_Name()
+
+### Class components
+-  made of js class
+
+### Config Driven UI
+### Props 
+### Giving Style in react style = {{}}
+
+
+
+
+## ---------- Episode 5 (Lets Get Hooked) ----------
+
+### What happens when you update state var
+- when state var is updated the Reconciliation cycle is executed(new virtual dom is created, diffing algo, component rerender)
+- if you update state var directly, i.e. stateVar=value, then the value will be updated but the Reconciliation cycle will not happen beacuse React think that state has'nt been updated and thus component will not re-render
