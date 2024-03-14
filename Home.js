@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from "react";
+import ClassParentComp from './ClassParentComp'
+
 
 const Header = () => {
-    const [stateVar1, setStateVar1] = useState(0);
-
+    const [online, setOnline] = useState('true')
     useEffect(() => {
-        console.log("useEffect");
-    }, [stateVar1]);
+        const eventListener1 = window.addEventListener('online', () => {
+            setOnline('true')
+        })
+        const eventListener2 = window.addEventListener('offline', () => {
+            setOnline('false')
+        })
 
-    console.log("hy");
+        return () => {
+            removeEventListener(eventListener1, eventListener2)
+        }
+    }, []);
+
 
     return (
         <>
-            <h1>Header</h1>
-            <p>stateVar1: {stateVar1}</p>
-            <button
-                onClick={() => {
-                    setStateVar1((prevState) => {
-                        if (prevState === 0) return 1;
-                        else return 0;
-                    });
-                }}
-            >
-                state var 1
-            </button>
-        </>
+            <h4>Online: {online}</h4>
+            <ClassParentComp name={"Rashika"} age={13}/>
+            </>
     );
 };
 

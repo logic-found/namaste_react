@@ -116,3 +116,37 @@
 ### What happens when you update state var
 - when state var is updated the Reconciliation cycle is executed(new virtual dom is created, diffing algo, component rerender)
 - if you update state var directly, i.e. stateVar=value, then the value will be updated but the Reconciliation cycle will not happen beacuse React think that state has'nt been updated and thus component will not re-render
+
+
+### useEffect
+- executed after component has rendered
+
+## ---------- Episode 8 (Lets Get Classy) ----------
+
+### Lifecycle
+- when class component is encountered then a new instance of that class comp will be created, when class is instantiated contructor method is called, then render method will be called
+
+
+### Why super() in constructor for props
+
+### State Var in class comp
+- state var is a object cant be updated directly, if updated directly the value gets updated but the Reconciliation cycle is not executed & component doesn't re-render
+- when using this.setState() to update state, it will only update the state ur changing and will not touch rest of the states
+
+### Lifecycle method
+![alt text](image.png)
+
+### Render Phase 
+- constructor then render method is called
+
+### Commit Phase
+- DOM updation then ComponentDidMount
+
+
+### Commit Phase Batching 
+- Commit Phase invovles updating the DOM, and when there are multiple children of a comp, it batches the Commit Phase of all the children, and when Render Phase of all the comp is done, then batched Commit hase will be executed, and all the updation in DOM, will be made at once.
+
+### useEffect return statement 
+- can only return a function, not anything else like value, promise etc else will throw error
+- because from useEffect callback function we either return a fun or nothing
+- and if we use useEffect(async () => {}), then it will return a promise, which violetes the the rule, and will give error

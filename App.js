@@ -6,6 +6,8 @@ import Home from './Home';
 import PageNotFound from './PageNotFound';
 import About from './About';
 import Navbar from './Navbar';
+import Contact from './Contact';
+
 
 const rootElement = document.getElementById('root');
 
@@ -30,6 +32,10 @@ const appRouter = createBrowserRouter([
             {
                 path : "/about",
                 element : <About/>
+            },
+            {
+                path : "/contact",
+                element : <Contact/>
             },
         ],
         errorElement : <PageNotFound/>
